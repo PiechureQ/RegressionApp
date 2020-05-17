@@ -20,6 +20,6 @@ export interface ItemProps {
   icon?: any;
   titleItem: string;
   color?: string;
-  link?: string;
+  link: string;
   to?: string;
 }
