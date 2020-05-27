@@ -9,6 +9,7 @@ import {
   StyledSubmitButton,
   StyledItemBox
 } from "../StyledForm";
+import Errors from "../../Errors/Errors";
 import Loader from "../../../Loader/Loader";
 import TestCaseItem from "./TestCaseItem";
 import { connect } from "react-redux";
@@ -19,7 +20,8 @@ class Container extends Component<any, ContainerProps> {
     testGroupName: "",
     testCaseList: [],
     testCaseValue: "",
-    projectId: ""
+    projectId: "",
+    errors: [],
   };
 
   componentDidMount() {
@@ -95,6 +97,10 @@ class Container extends Component<any, ContainerProps> {
       e.preventDefault();
       if (this.state.testGroupName && this.state.testCaseList.length >= 1) {
         this.props.createTestGroup(this.state);
+      } else {
+          let errors: any[] = this.state.errors;
+          errors.push('Nie można utworzyć grupy, nie wybrano przypadków testowych');
+          this.setState({errors: errors});
       }
     };
 
@@ -134,6 +140,7 @@ class Container extends Component<any, ContainerProps> {
               <StyledSubmitButton onClick={createNewTestGroup}>
                 Create Group
               </StyledSubmitButton>
+              {this.state.errors.length > 0 && <Errors errorMsgs={this.state.errors} />}
             </StyledForm>
           </StyledFlex>
         </StyledContainer>
@@ -158,4 +165,5 @@ interface ContainerProps {
   deleteEvent?: any;
   testGroupName?: string;
   projectId?: string;
+  errors?: Array<string>;
 }
