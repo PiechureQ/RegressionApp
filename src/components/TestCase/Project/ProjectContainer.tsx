@@ -92,12 +92,12 @@ class ProjectContainer extends Component<any, ProjectProps> {
 
     return (
       <StyledContainer>
-        <SearchBar />
+          {/*<SearchBar />*/}
         <StyledTableContainer>
           <TableBootstrap striped bordered hover>
             <thead>
               <tr>
-                <th>Component</th>
+                <th>Group</th>
                 <th>Number of test case</th>
                 <th>Edit</th>
                 <th>Delete</th>

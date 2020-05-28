@@ -76,8 +76,8 @@ class Table extends Component<TableProps> {
           <thead>
             <tr>
               <th>Date</th>
-              <th>Title</th>
-              <th>Project</th>
+              <th>ID</th>
+              <th>Name</th>
               <th>Status</th>
               <th>Action</th>
             </tr>

@@ -123,7 +123,7 @@ class Container extends Component<any, ContainerProps> {
                 type="text"
                 id="testCase"
                 name="testCase"
-                placeholder="Test case"
+                placeholder="Add test case"
                 value={this.state.testCaseValue}
                 onKeyDown={addNewTestCase}
                 onChange={addNewTestCase}

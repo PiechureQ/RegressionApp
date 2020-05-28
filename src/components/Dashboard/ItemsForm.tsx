@@ -25,12 +25,14 @@ const ItemsForm = () => {
       </StyledContainerForm>
 
       <StyledContainerForm>
+          {/*
         <Item
           icon={historyIcon}
           titleItem="History"
           color="#D9A14F"
           link="/dashboard"
         />
+            */}
         <Item
           icon={projectIcon}
           titleItem="Add Project"

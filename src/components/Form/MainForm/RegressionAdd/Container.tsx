@@ -127,7 +127,7 @@ class Container extends Component<ContainerProps> {
                 type="text"
                 required
                 id="regressionProjectName"
-                placeholder="Project name"
+                placeholder="Regression name"
                 onChange={setRegressionData}
               />
 

@@ -11,6 +11,13 @@ export const StyledContainer = styled.div`
   margin-top: 30px;
 `;
 
+export const StyledHeader = styled.h2`
+  font-weight: 400;
+  font-style: bold;
+  font-size: 20px;
+  color: #4587df;
+`;
+
 export const StyledMoreButton = styled.button`
   width: 40%;
   margin: 0 auto;

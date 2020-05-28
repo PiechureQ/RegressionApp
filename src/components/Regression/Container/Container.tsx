@@ -6,7 +6,7 @@ import Table from "../Table/Table";
 const Container = () => {
   return (
     <StyledBox>
-      <SearchBar />
+      {/*<SearchBar />*/}
       <Table />
       <StyledAddIcon to="/regression-add">+</StyledAddIcon>
     </StyledBox>

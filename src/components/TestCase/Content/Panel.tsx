@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyledContainer, StyledMoreButton } from "./StyledContent";
+import { StyledContainer, StyledMoreButton, StyledHeader } from "./StyledContent";
 import ProjectItem from "./ProjectItem";
 import SearchBar from "./SearchBar/SearchBar";
 import { connect } from "react-redux";
@@ -27,13 +27,18 @@ class Panel extends Component<any, PanelProps> {
 
     return (
       <React.Fragment>
-        <SearchBar />
+          {/*<SearchBar />*/}
+        <div style={{ textAlign: "center" }}>
+          <StyledHeader>All your projects</StyledHeader>
+        </div>
         <StyledContainer>
           {renderAllProjects ? renderAllProjects : <Loader />}
         </StyledContainer>
+        {/*
         <div style={{ textAlign: "center" }}>
           <StyledMoreButton>More</StyledMoreButton>
         </div>
+        */}
       </React.Fragment>
     );
   }
