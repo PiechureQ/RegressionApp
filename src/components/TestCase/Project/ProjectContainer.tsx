@@ -9,7 +9,6 @@ import {
   StyledViewIcon,
   StyledActionLink
 } from "./StyledProject";
-import SearchBar from "./SearchBar/SearchBar";
 import { Table as TableBootstrap } from "react-bootstrap";
 import trashIcon from "../../../assets/Trash.svg";
 import editIcon from "../../../assets/EditCase.svg";

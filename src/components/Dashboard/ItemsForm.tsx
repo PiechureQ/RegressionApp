@@ -3,7 +3,6 @@ import { StyledBoxForm, StyledContainerForm } from "./StyledDashboard";
 import Item from "./Item";
 import createIcon from "../../assets/Create.svg";
 import editIcon from "../../assets/Layer.svg";
-import historyIcon from "../../assets/History.svg";
 import projectIcon from "../../assets/History.svg";
 
 const ItemsForm = () => {

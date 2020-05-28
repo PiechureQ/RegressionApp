@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { StyledContainer, StyledMoreButton, StyledHeader } from "./StyledContent";
+import { StyledContainer, StyledHeader } from "./StyledContent";
 import ProjectItem from "./ProjectItem";
-import SearchBar from "./SearchBar/SearchBar";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
